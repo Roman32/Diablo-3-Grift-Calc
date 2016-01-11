@@ -10,9 +10,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.FlowLayout;
 import javax.swing.JTextField;
-<<<<<<< HEAD
 import javax.swing.SwingConstants;
-=======
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,17 +18,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
->>>>>>> acec114e6aec7f7768ebe9ff2b40fec8f6efd0c6
 
 public class RiftGUI extends JFrame {
 
 	private JPanel contentPane;
-<<<<<<< HEAD
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-=======
 	private JTextField textLevel;
 	private JTextField textName;
 	private JTextField textClass;
@@ -40,7 +31,6 @@ public class RiftGUI extends JFrame {
 	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTextField textField_7;
->>>>>>> acec114e6aec7f7768ebe9ff2b40fec8f6efd0c6
 
 	/**
 	 * Launch the application.
@@ -73,11 +63,8 @@ public class RiftGUI extends JFrame {
 		
 		/**Start of the add Rift Panel*/
 		JComponent addPanel = new JPanel();
-<<<<<<< HEAD
 		FlowLayout flowLayout = (FlowLayout) addPanel.getLayout();
 		flowLayout.setHgap(30);
-=======
->>>>>>> acec114e6aec7f7768ebe9ff2b40fec8f6efd0c6
 		tabPane.addTab("Add Greater Rift", addPanel);
 		addPanel.setLayout(null);
 		
@@ -86,42 +73,21 @@ public class RiftGUI extends JFrame {
 		lblRiftLevel.setBounds(80, 5, 85, 16);
 		addPanel.add(lblRiftLevel);
 		
-		textField = new JTextField();
-		textField.setHorizontalAlignment(SwingConstants.TRAILING);
-		addPanel.add(textField);
-		textField.setColumns(10);
-		
 		JLabel lblToonName = new JLabel("Toon Name");
 		lblToonName.setFont(new Font("Franklin Gothic Heavy", Font.PLAIN, 15));
 		lblToonName.setBounds(80, 47, 85, 16);
 		addPanel.add(lblToonName);
-		
-		textField_1 = new JTextField();
-		addPanel.add(textField_1);
-		textField_1.setColumns(10);
-		
+				
 		JLabel lblToonClass = new JLabel("Toon Class");
 		lblToonClass.setFont(new Font("Franklin Gothic Heavy", Font.PLAIN, 15));
 		lblToonClass.setBounds(80, 87, 85, 16);
 		addPanel.add(lblToonClass);
 		
-		textField_2 = new JTextField();
-		addPanel.add(textField_2);
-		textField_2.setColumns(10);
-		
 		JLabel lblTime = new JLabel("Time");
 		lblTime.setFont(new Font("Franklin Gothic Heavy", Font.PLAIN, 15));
 		lblTime.setBounds(80, 122, 42, 16);
 		addPanel.add(lblTime);
-<<<<<<< HEAD
-		
-		textField_3 = new JTextField();
-		addPanel.add(textField_3);
-		textField_3.setColumns(10);
-		setContentPane(contentPane);
-=======
->>>>>>> acec114e6aec7f7768ebe9ff2b40fec8f6efd0c6
-		
+
 		textLevel = new JTextField();
 		textLevel.setBounds(236, 2, 116, 22);
 		addPanel.add(textLevel);
