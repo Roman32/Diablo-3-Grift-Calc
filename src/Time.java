@@ -14,6 +14,16 @@ public class Time {
 		this.minute = Integer.valueOf(time.substring(0,time.indexOf(':')));
 		this.second = Integer.valueOf(time.substring(time.indexOf(':')+1,time.length()));
 	}
+	
+	public void setTime(String time){
+		this.time = time;
+		this.minute = Integer.valueOf(time.substring(0,time.indexOf(':')));
+		this.second = Integer.valueOf(time.substring(time.indexOf(':')+1,time.length()));
+	}
+	
+	public String getTime(){
+		return this.time;
+	}
 
 	
 	@Override

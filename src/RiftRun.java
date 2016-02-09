@@ -58,4 +58,8 @@ public class RiftRun {
 		}
 		return this.toonClass;
 	}
+	
+	public void setTime(String time){
+		this.runTime.setTime(time);
+	}
 }

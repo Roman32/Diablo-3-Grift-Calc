@@ -28,6 +28,9 @@ public class D3Calc {
 	public static void createTable() throws Exception{
 		try{
 			Connection conn =connectToDB();
+			if(conn == null){
+				System.exit(0);
+			}
 			PreparedStatement create = conn.prepareStatement("CREATE TABLE IF NOT EXISTS rift(Id INT NOT NULL AUTO_INCREMENT, Level INT NOT NULL, Toon VARCHAR(25), Class VARCHAR(5) NOT NULL, Time VARCHAR(10) NOT NULL, PRIMARY KEY(Id))");
 			create.executeUpdate();
 		}catch(Exception e){

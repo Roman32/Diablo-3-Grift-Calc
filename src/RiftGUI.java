@@ -173,9 +173,11 @@ public class RiftGUI extends JFrame {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
 			RiftRun rift = new RiftRun();
 			rift.setLevel(Integer.parseInt(textLevel.getText()));
+			rift.setName(textName.getText());
+			rift.setClass(textClass.getText());
+			rift.setTime(textTime.getText());
 			
 		}
 		
